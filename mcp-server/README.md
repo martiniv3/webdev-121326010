@@ -66,7 +66,7 @@ got: {"jsonrpc":"2.0","id":4,"method":"tools/call","params":{"name":"find_lectur
 <!-- Three sentences: what you changed in the description, whether the model chose the tool differently, and why you think so. -->
 
 I changed the find_lecture description from a detailed explanation to a more general one.
-The model behaved differently when asked about lecture 7.
-This suggests that tool descriptions help the model decide when a tool is relevant.
+The model behaved slightly differently when asked about lecture 7 but overall no issues.
+This suggests that tool descriptions slightly help the model to decide when a tool is relevant.
 
 
