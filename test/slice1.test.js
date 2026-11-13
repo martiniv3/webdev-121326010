@@ -27,7 +27,7 @@ test('AC-10 seeded user sees three upcoming events', async () => {
   const login = await get('/login', {
     method: 'POST',
     headers: { 'content-type': 'application/x-www-form-urlencoded' },
-    body: 'email=student%40example.com&password=password'
+    body: 'email=student%40example.com&password=ClubEvents2026%21'
   });
   assert.equal(login.status, 302);
   const page = await get('/events', { headers: { cookie: login.headers.get('set-cookie') } });
@@ -44,7 +44,7 @@ test('AC-11 deleted events disappear after reload', async () => {
   const login = await get('/login', {
     method: 'POST',
     headers: { 'content-type': 'application/x-www-form-urlencoded' },
-    body: 'email=student%40example.com&password=password'
+    body: 'email=student%40example.com&password=ClubEvents2026%21'
   });
   const page = await get('/events', { headers: { cookie: login.headers.get('set-cookie') } });
   assert.doesNotMatch(await page.text(), /Campus Clean-up/);

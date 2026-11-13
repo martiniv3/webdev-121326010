@@ -9,7 +9,6 @@ Club Events is a responsive web application for a university student club. Stude
 - Install: `npm install`
 - Run: `npm start`
 - Test: `npm test`
-- Coverage: `npm run coverage`
 - MCP server: `npm run --silent mcp`
 
 ## Conventions
