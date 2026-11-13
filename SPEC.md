@@ -92,7 +92,7 @@ Club events.
 
 ### Slice 1: sign-in and the upcoming events list
 - [AC-9] A visitor who opens `/events` without signing in is redirected to `/login` and cannot see the events list.
-- [AC-10] A user who signs in with a seeded account sees the three seeded upcoming events at `/events`, each displaying its title, date, location and number of available places.
+- [AC-10] A user who signs in with a seeded account sees the three seeded events dated today or later at `/events`, each displaying its title, date, location and number of available places.
 - [AC-11] When an event is deleted from the database and the user reloads `/events`, that event no longer appears in the list.
 
 
@@ -110,14 +110,15 @@ Club events.
 **Passed criteria:**
 
 - **AC-9:** An unauthenticated visitor who opens `/events` is redirected to `/login`. Verified manually.
-- **AC-10:** A user who signs in with the seeded account sees all three seeded upcoming events, including their titles, dates, locations and available places. Verified manually.
+- **AC-10:** A user who signs in with the seeded account sees all three seeded events dated today or later, including their titles, dates, locations and available places. Verified manually.
 - **AC-11:** After deleting an event directly from the SQLite database and reloading `/events`, the deleted event no longer appears in the list. Verified manually.
 
 **Missed or reinterpreted requirements:**
 
-- No deviations from the three Slice 1 acceptance criteria were observed during manual verification.
-- The verification performed in this slice was limited to AC-9, AC-10 and AC-11. The other acceptance criteria have not been evaluated as part of this slice.
+- The original wording of AC-10 did not explicitly define what qualifies as an upcoming event. The implementation includes events dated today or later.
+- No other deviations from the three Slice 1 acceptance criteria were observed during manual verification.
+- Verification in this slice was limited to AC-9, AC-10 and AC-11. The other acceptance criteria have not been evaluated as part of this slice.
 
 **Changes to the specification:**
 
-- No changes were made to the acceptance criteria. The implementation was checked against the existing Slice 1 requirements.
+- Clarified AC-10 to explicitly define upcoming events as events dated today or later, matching the implemented date filter.
