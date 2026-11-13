@@ -1,4 +1,4 @@
-# Instructions for the agent
+c# Instructions for the agent
 
 Read this file at the start of every session. Keep it short and correct; update it when the project changes.
 

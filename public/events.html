@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Upcoming events | Club Events</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+  <header><h1>Upcoming club events</h1><form method="post" action="/logout"><button type="submit">Sign out</button></form></header>
+  <main id="events-list" aria-live="polite"></main>
+  <script>window.clubEvents = __EVENTS_JSON__;</script>
+  <script src="/events.js"></script>
+</body>
+</html>

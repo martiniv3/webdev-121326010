@@ -1,0 +1,10 @@
+:root { font-family: system-ui, sans-serif; color: #172033; background: #f4f6fb; }
+body { max-width: 70rem; margin: 0 auto; padding: 2rem 1rem; }
+.card, article { background: white; border-radius: .75rem; padding: 1.5rem; box-shadow: 0 2px 12px #17203318; }
+.card { max-width: 28rem; margin: 10vh auto; } form { display: grid; gap: .75rem; }
+label { font-weight: 600; } input, button { min-height: 2.75rem; font: inherit; padding: .4rem .7rem; }
+button { cursor: pointer; border: 0; border-radius: .35rem; background: #2457c5; color: white; font-weight: 600; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+#events-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
+.error { color: #a01818; display: none; } body.login-error .error { display: block; }
+:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }

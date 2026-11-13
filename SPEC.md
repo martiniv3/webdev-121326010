@@ -104,3 +104,20 @@ Club events.
 
 ## Spec vs result
 <!-- After the agent builds the slice: which criteria passed, which it missed or reinterpreted, and what you changed in this spec because of it. -->
+
+### Slice 1 — Sign-in and the upcoming events list
+
+**Passed criteria:**
+
+- **AC-9:** An unauthenticated visitor who opens `/events` is redirected to `/login`. Verified manually.
+- **AC-10:** A user who signs in with the seeded account sees all three seeded upcoming events, including their titles, dates, locations and available places. Verified manually.
+- **AC-11:** After deleting an event directly from the SQLite database and reloading `/events`, the deleted event no longer appears in the list. Verified manually.
+
+**Missed or reinterpreted requirements:**
+
+- No deviations from the three Slice 1 acceptance criteria were observed during manual verification.
+- The verification performed in this slice was limited to AC-9, AC-10 and AC-11. The other acceptance criteria have not been evaluated as part of this slice.
+
+**Changes to the specification:**
+
+- No changes were made to the acceptance criteria. The implementation was checked against the existing Slice 1 requirements.

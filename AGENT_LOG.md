@@ -36,3 +36,12 @@ One entry per agent session, newest at the bottom. Be honest: what went wrong is
 - Checkpoints: Observed the model's tool selection and recorded the token statistics.
 - Went wrong: No significant issues.
 - Changed by hand: Modified the tool description, ran the second session, and recorded the results.
+
+
+## 2026-11-13 · Exercise 2 — Club Events Slice 1 implementation
+
+- Goal: Plan and implement Slice 1 of the Club Events project according to SPEC.md.
+- Delegated: Used GitHub Copilot Student to review the project instructions, prepare an implementation plan and implement the sign-in and upcoming events functionality.
+- Checkpoints: Copilot completed the implementation. Automated tests passed (3/3). Manual verification confirmed AC-9, AC-10 and AC-11. The Exercise 2 structural checks passed (32/32).
+- Went wrong: The seeded test account initially had a password hash that did not authenticate with the intended test password. A new bcrypt hash was generated and verified, after which sign-in worked. The root URL `/` also displayed `Cannot GET /`; this was outside the Slice 1 acceptance criteria.
+- Changed by hand: Corrected the seeded test account password hash in migration `003_set_seed_password.sql`, performed the manual acceptance checks and documented the Slice 1 results in SPEC.md.
