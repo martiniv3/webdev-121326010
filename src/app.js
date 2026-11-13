@@ -5,6 +5,9 @@ const eventsRouter = require('./routes/events');
 
 migrate();
 const app = express();
+app.get('/', (req, res) => {
+  res.redirect('/login');
+});
 app.use(express.static('public'));
 app.use(authRouter);
 app.use(eventsRouter);
